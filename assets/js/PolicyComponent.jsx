@@ -37,3 +37,5 @@ function RecentPolicyComponent() {
         </div>
     );
 }
+
+export default RecentPolicyComponent;

@@ -39,3 +39,5 @@ function ServiceComponent() {
         </div>
     );
 }
+
+export default ServiceComponent;
