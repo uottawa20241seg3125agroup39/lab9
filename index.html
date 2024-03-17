@@ -15,8 +15,8 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body id="page-top">
-<div class='container'>
-    <div class="container-fluid px-0 d-flex align-items-center justify-content-between">
+<div class='container-fluid'>
+    <div class="px-0 d-flex align-items-center justify-content-between">
         <img src="assets/img/flag.png" class="img-fluid" alt="Banner" style="height: auto; max-height: 70px; width: auto; flex-shrink: 1;">
         <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="background: #be0909; height: 70px; width: 130.0625px;">
             <div class="sidebar-brand-icon rotate-n-15">
@@ -28,46 +28,48 @@
         </a>
     </div>
 
-    <div class="container-fluid px-0" style="border-bottom: 6px solid #be0909;"></div>
+    <div class="px-0" style="border-bottom: 6px solid #be0909;"></div>
 
 
-
-
-    <div id="wrapper">
-
-
-
-        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: #be0909;">
-            <div class="container-fluid d-flex flex-column p-0">
-                <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar" style="margin-bottom: 1px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html" style="font-size: 17px;">
-                            <i class="fas fa-home" style="font-size: 25px;"></i>Home
-                        </a>
-                        <a class="nav-link active" href="index.html" style="font-size: 17px;">
-                            <i class="fas fa-user" style="font-size: 25px;"></i>About Us
-                        </a>
-                        <a class="nav-link active" href="http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/" style="font-size: 17px;">
-                            <i class="fas fa-passport" style="font-size: 25px;"></i>About the Embassy
-                        </a>
-                        <a class="nav-link active" href="index.html" style="font-size: 17px;">
-                            <i class="fas fa-compass" style="font-size: 25px;"></i>Consular Service
-                        </a>
-                        <a class="nav-link active" href="index.html" style="font-size: 17px;">
-                            <i class="far fa-edit" style="font-size: 25px;"></i>Tax Reporting
-                        </a>
-                    </li>
-                </ul>
-                <div class="text-center d-none d-md-inline"></div>
-                <button class="btn rounded-circle border-0" id="sidebarToggle" type="button" style="position: relative;margin: 99px 99px 16px;display: block;margin-right: 50px;margin-left: 52px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;"></button>
-                <div style="padding-bottom: 0px;margin-bottom: 152px;"></div>
-            </div>
+<div class='row'>
+    <div class="d-flex flex-column p-0 col-2 min-vh-100">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark d-flex flex-column h-100" style="background: #be0909;">
+            <hr class="sidebar-divider my-0">
+            <ul class="navbar-nav text-light mb-auto mt-1 mr-auto ml-2" id="accordionSidebar" >
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" style="font-size: 17px;">
+                        <i class="fas fa-home" style="font-size: 25px;"></i>Home
+                    </a>
+                    <a class="nav-link active" href="index.html" style="font-size: 17px;">
+                        <i class="fas fa-user" style="font-size: 25px;"></i>About Us
+                    </a>
+                    <a class="nav-link active" href="http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/" style="font-size: 17px;">
+                        <i class="fas fa-passport" style="font-size: 25px;"></i>About the Embassy
+                    </a>
+                    <a class="nav-link active" href="index.html" style="font-size: 17px;">
+                        <i class="fas fa-compass" style="font-size: 25px;"></i>Consular Service
+                    </a>
+                    <a class="nav-link active" href="index.html" style="font-size: 17px;">
+                        <i class="far fa-edit" style="font-size: 25px;"></i>Tax Reporting
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center d-none d-md-inline"></div>
+            <button class="btn rounded-circle border-0" id="sidebarToggle" type="button" style="position: relative;margin: 99px 99px 16px;display: block;margin-right: 50px;margin-left: 52px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;"></button>
+            <div style="padding-bottom: 0px;margin-bottom: 152px;"></div>
         </nav>
+    </div>
+    <div id="wrapper" class="flex-column-reverse col-10">
+
+
+
+
+
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light">
-                    <div class="container-fluid">
+                    <div class="">
                         <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button">
                             <i class="fas fa-bars"></i>
                         </button>
@@ -82,7 +84,7 @@
                     </div>
                 </nav>
 
-                <div class="container-fluid">
+                <div class="">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
                         <h3 class="text-dark mb-0">Advertisement</h3>
                     </div>
@@ -244,6 +246,7 @@
             <i class="fas fa-angle-up"></i>
         </a>
     </div>
+</div>
 
 </div>
 </body>
