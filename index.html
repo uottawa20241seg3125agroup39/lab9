@@ -12,8 +12,27 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <!-- 生产环境中不建议使用 -->
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<!--    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.0/babel.min.js" integrity="sha512-2nvFgDDkDQZAO7x0iuupGiKpK+/qm7+bjzIEZBCn3o7v60+ZaPoe5x4sb21xahHfI7RCC9emLVY1k4kvap9RyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="assets/main.css">
+<!--    <script src="assets/js/main.js" type="module"></script>-->
+<!--        <script src="assets/js/main.jsx" type="text/babel"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.14.3/system.min.js" integrity="sha512-oii/7p33/BBO7gnQjoLlz168bBCtczHlGTl/S+6D0fzhNC59MwRJHqb14nt40bLRnBBl5wvG2cNkclZjA20szg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main_combine.jsx" type="text/jsx" data-type="module"  data-presets="env,react"></script>
+    <!--    <script src="assets/js/PolicyComponent.jsx" type="text/babel"></script>-->
+<!--    <script src="assets/js/ServiceComponent.jsx" type="text/babel"></script>-->
+<!--    <script src="assets/js/SpeakingComponent.jsx" type="text/babel"></script>-->
+    <!--    <script type="systemjs-importmap">-->
+<!--        {-->
+<!--          "imports": {-->
+<!--            "app": "./assets/js/main.js"-->
+<!--          }-->
+<!--        }-->
+<!--    </script>-->
+
+<!--    <script>-->
+<!--        System.import('app');-->
+<!--    </script>-->
 </head>
 <body id="page-top">
 <div class='container-fluid'>
@@ -127,31 +146,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body" id="Embassy-card-DOM">
-                                    <div class="right" id="sgfyr_list">
-                                        <ul>
 
-                                            <li class="item" data-id="11261098">
-                                                <a href="./lcbt/sgfyr/202403/t20240315_11261098.htm" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in Canada（2024-03-14）</a>
-                                            </li>
-
-                                            <li class="item" data-id="11259944">
-                                                <a href="./lcbt/sgfyr/202403/t20240313_11259944.htm" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in Canada（2024-03-12）</a>
-                                            </li>
-
-                                            <li class="item" data-id="11256064">
-                                                <a href="./lcbt/sgfyr/202403/t20240308_11256064.htm" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in Canada（2024-03-08）</a>
-                                            </li>
-
-                                            <li class="item" data-id="11247703">
-                                                <a href="./lcbt/sgfyr/202402/t20240221_11247703.htm" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in Canada（2024-02-20）</a>
-                                            </li>
-
-                                            <li class="item" data-id="11227041">
-                                                <a href="./lcbt/sgfyr/202401/t20240117_11227041.htm" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in Canada（2024-01-16）</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -163,26 +158,7 @@
                                     <h6 class="text-primary fw-bold m-0">Service</h6>
                                 </div>
                                 <div class="card-body" id="Service-card-DOM">
-                                    <ul class="list-inline d-flex justify-content-around align-items-center" style="width: 100%; list-style: none; padding: 0;"> <!-- Ensure full width and horizontal layout -->
-                                        <li class="list-inline-item text-center" style="flex: 1;"> <!-- Each item takes equal space and centers its content -->
-                                            <a href="http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/" style="text-decoration: none; color: black;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
-                                                <img src="assets/img/avatars/pass.PNG" class="img-fluid" style="max-width: 80px; display: block; margin: auto;" alt="" /> <!-- Ensure the image is responsive and centered -->
-                                                <span>Visa, Passport, Notarization & Authentication</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item text-center" style="flex: 1;">
-                                            <a href="#" style="text-decoration: none; color: black; padding-left:0;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
-                                                <img src="assets/img/avatars/edu.PNG" class="img-fluid" style="max-width: 80px; display: block; margin: auto;" alt="" />
-                                                <span>Educational Service</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item text-center" style="flex: 1;">
-                                            <a href="#" style="text-decoration: none; color: black;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
-                                                <img src="assets/img/avatars/media.PNG" class="img-fluid" style="max-width: 80px; display: block; margin: auto;" alt="" />
-                                                <span>Media Service</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+
                                 </div>
                             </div>
 
@@ -208,27 +184,7 @@
 
                                     <!--                                Current policy-->
 
-                                    <div class="right">
-                                        <ul>
-
-                                            <li class="item">
-                                                <a href="./zytz_0/202401/t20240127_11234434.htm" target="_blank">Competition for the Chinese Government Scholarship 2024-2025（2024-01-26）</a>
-                                            </li>
-
-                                            <li class="item">
-                                                <a href="./zytz_0/202312/t20231226_11212594.htm" target="_blank">Notice on the Abolition of Consular Authentication Services by the Chinese Embassy and Consulates-General in Canada after the Apost..（2023-12-25）</a>
-                                            </li>
-
-                                            <li class="item">
-                                                <a href="./zytz_0/202312/t20231223_11210065.htm" target="_blank">Notice on the Chinese Public Holidays in 2024（2023-12-22）</a>
-                                            </li>
-
-                                            <li class="item">
-                                                <a href="./zytz_0/202312/t20231220_11207314.htm" target="_blank">Notice（2023-12-19）</a>
-                                            </li>
-
-                                        </ul>
-                                    </div></div>
+                                    </div>
                             </div>
                         </div>
                     </div>
