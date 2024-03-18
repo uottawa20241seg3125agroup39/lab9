@@ -1,0 +1,3 @@
+Some unreachable code commented from chat gpt
+advertisement pic from DALLE
+babel setting from https://babeljs.io/docs/babel-standalone

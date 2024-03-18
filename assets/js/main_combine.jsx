@@ -87,14 +87,22 @@ function EmbassySpeakingComponent() {
         </div>
     );
 }
-
+function AdvertisementComponent() {
+    return (
+        <div className={"img-fluid row d-flex m-0 p-0 justify-content-center align-items-center"}>
+            <img src={"assets/img/adv1.webp"} className={"col-12  p-0 w-100 h-auto"} alt={"Surprise 10000CAD Daily!"} />
+        </div>
+    );
+}
 function initRender(){
     let policy=$('#policy-card-DOM')[0];
     let service=$('#Service-card-DOM')[0];
     let speaking=$('#Embassy-card-DOM')[0];
+    let adv=$('#ADV-card-DOM')[0];
     ReactDOM.render(<RecentPolicyComponent />, policy);
     ReactDOM.render(<ServiceComponent />, service);
     ReactDOM.render(<EmbassySpeakingComponent />, speaking);
+    ReactDOM.render(<AdvertisementComponent />, adv);
 }
 
 $(document).ready(function(){
