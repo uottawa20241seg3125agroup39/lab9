@@ -50,6 +50,8 @@
                 </div>
             </div>
         </a>
+
+
     </div>
 
     <div class="px-0" style="border-bottom: 6px solid #be0909;"></div>
@@ -97,14 +99,24 @@
                         <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button">
                             <i class="fas fa-bars"></i>
                         </button>
-                        <form class="w-100 d-none d-sm-inline-block my-2 my-md-0 navbar-search ">
-                            <div class="input-group d-flex row">
-                                <input class="bg-light form-control border-0 small flex-column col-11" type="text" placeholder="Search for ..." style="width: 85%;">
-                                <button class="btn btn-primary py-0 flex-column-reverse col-1" type="button" style="background: #be0909;">
+                        <form class="w-100 d-none d-sm-inline-block my-2 my-md-0 navbar-search">
+                            <div class="input-group">
+                                <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..." style="flex-grow: 1;">
+                                <button class="btn btn-primary" type="button" style="background: #be0909; border-color: #be0909;">
                                     <i class="fas fa-search"></i>
                                 </button>
+                                <div class="dropdown" style="margin-left: 10px;"> <!-- Added margin for spacing -->
+                                    <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #be0909; border-color: #be0909; color: white;">
+                                        Language
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">中文</a>
+                                    </div>
+                                </div>
                             </div>
                         </form>
+
                     </div>
                 </nav>
 
@@ -200,6 +212,7 @@
                             <li class="list-inline-item"><a href="https://lab.seg3125.uocourse.skycloud.wang" title="Lab Home Page">Home Page</a></li>
 <!--                            <li class="list-inline-item"><a href="https://blog.jixiaob.cn/backup/hertakuru/" title="kururu~">Background Img</a></li>-->
 <!--                            <li class="list-inline-item"><a href="/result" target="_blank">Result</a></li>-->
+                        </ul>
                     </div>
                 </div>
             </footer>
