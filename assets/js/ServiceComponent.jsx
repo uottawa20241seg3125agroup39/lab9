@@ -1,4 +1,4 @@
-function ServiceComponent() {
+function ServiceComponent(data) {
     const handleMouseOver = (event) => {
         event.target.style.color = 'red';
     };
@@ -10,25 +10,35 @@ function ServiceComponent() {
     return (
         <ul className="list-inline d-flex justify-content-around align-items-center" style={{ width: '100%', listStyle: 'none', padding: 0 }}>
             <li className="list-inline-item text-center" style={{ flex: 1 }}>
-                <a href="http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/" style={{ textDecoration: 'none', color: 'black' }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                    <img src="assets/img/avatars/pass.PNG" className="img-fluid" style={{ maxWidth: '80px', display: 'block', margin: 'auto' }} alt="Visa, Passport, Notarization & Authentication" />
-                    <span>Visa, Passport, Notarization & Authentication</span>
+                <a href={data.o1.href} style={{ textDecoration: 'none', color: 'black' }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} target="_blank">
+                    <img src={data.o1.img} className="img-fluid" style={{ maxWidth: '80px', display: 'block', margin: 'auto' }} alt={data.o1.name} title={data.o1.name} />
+                    <span>{data.o1.name}</span>
                 </a>
             </li>
             <li className="list-inline-item text-center" style={{ flex: 1 }}>
-                <a href="#" style={{ textDecoration: 'none', color: 'black', paddingLeft: 0 }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                    <img src="assets/img/avatars/edu.PNG" className="img-fluid" style={{ maxWidth: '80px', display: 'block', margin: 'auto' }} alt="Educational Service" />
-                    <span>Educational Service</span>
+                <a href={data.o2.href} style={{textDecoration: 'none', color: 'black'}} onMouseOver={handleMouseOver}
+                   onMouseOut={handleMouseOut} target="_blank">
+                    <img src={data.o2.img} className="img-fluid"
+                         style={{maxWidth: '80px', display: 'block', margin: 'auto'}} alt={data.o2.name}
+                         title={data.o2.name}/>
+                    <span>{data.o2.name}</span>
                 </a>
             </li>
-            <li className="list-inline-item text-center" style={{ flex: 1 }}>
-                <a href="#" style={{ textDecoration: 'none', color: 'black' }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                    <img src="assets/img/avatars/media.PNG" className="img-fluid" style={{ maxWidth: '80px', display: 'block', margin: 'auto' }} alt="Media Service" />
-                    <span>Media Service</span>
+            <li className="list-inline-item text-center" style={{flex: 1}}>
+                <a href={data.o3.href} style={{textDecoration: 'none', color: 'black'}} onMouseOver={handleMouseOver}
+                   onMouseOut={handleMouseOut} target="_blank">
+                    <img src={data.o3.img} className="img-fluid"
+                         style={{maxWidth: '80px', display: 'block', margin: 'auto'}} alt={data.o3.name}
+                         title={data.o3.name}/>
+                    <span>{data.o3.name}</span>
                 </a>
             </li>
         </ul>
     );
 }
 
-export default ServiceComponent;
+$('document').ready(function () {
+    $.getJSON("assets/config/service.json", function (data) {
+        ReactDOM.render(<ServiceComponent {...data} />, $('#Service-card-DOM')[0]);
+    })
+})

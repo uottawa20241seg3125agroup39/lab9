@@ -1,0 +1,18 @@
+{
+  "o1": {
+    "name": "Visa, Passport, Notarization & Authentication",
+    "img": "assets/img/avatars/pass.PNG",
+    "href": "http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/"
+  },
+  "o2": {
+    "name": "Educational Service",
+    "img": "assets/img/avatars/edu.PNG",
+    "href": "eduservice.html"
+  },
+  "o3": {
+    "name": "Media Service",
+    "img": "assets/img/avatars/media.PNG",
+    "href": "media.html"
+  }
+
+}
