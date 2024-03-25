@@ -1,0 +1,28 @@
+{
+  "nav": [
+    {
+      "name": "Home",
+      "class": "fas fa-home pr-1",
+      "url": "index.html",
+      "target": "_self"
+    },
+    {
+        "name": "About the Embassy",
+        "class": "fas fa-passport pr-1",
+        "url": "http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/",
+      "target": "_blank"
+        },
+    {
+      "name": "Consular Service",
+      "class": "fas fa-compass pr-1",
+      "url": "maintenance.html?name=Consular",
+        "target": "_blank"
+    },
+    {
+      "name": "Tax Reporting",
+      "class": "far fa-edit pr-1",
+        "url": "maintenance.html?name=Tax",
+        "target": "_blank"
+    }
+  ]
+}
