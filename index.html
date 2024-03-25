@@ -24,6 +24,9 @@
     <script src="assets/js/advertisementComponent.jsx" defer type="text/babel" data-type="module"  data-presets="react,env-plus"></script>
     <script src="assets/js/ServiceComponent.jsx" defer type="text/babel" data-type="module"  data-presets="react,env-plus"></script>
     <script src="assets/js/navbar.jsx" defer type="text/babel" data-type="module"  data-presets="react,env-plus"></script>
+<!--    <div class="gtranslate_wrapper"></div>-->
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","zh-CN","fr"],"wrapper_selector":".gtranslate_wrapper","select_language_label":"Language"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
 
     <!--    <script src="assets/js/PolicyComponent.jsx" type="text/babel"></script>-->
 <!--    <script src="assets/js/ServiceComponent.jsx" type="text/babel"></script>-->
@@ -85,14 +88,8 @@
                                 <button class="btn btn-primary" type="button" style="background: #be0909; border-color: #be0909;" id="search-button">
                                     <i class="fas fa-search"></i>
                                 </button>
-                                <div class="dropdown" style="margin-left: 10px;"> <!-- Added margin for spacing -->
-                                    <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #be0909; border-color: #be0909; color: white;">
-                                        Language
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                                        <a class="dropdown-item" href="https://lab.seg3125.uocourse.skycloud.wang/lab9">English</a>
-                                        <a class="dropdown-item" href="#">中文</a>
-                                    </div>
+                                <div class="" style="margin-left: 10px;"> <!-- Added margin for spacing -->
+                                    <div class="gtranslate_wrapper"></div>
                                 </div>
                             </div>
                         </form>
