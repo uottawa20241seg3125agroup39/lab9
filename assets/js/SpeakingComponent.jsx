@@ -6,7 +6,7 @@ function generateEmbassyNewsList(){
                 <ul>
                     {data.map((item, index) => {
                         return (
-                            <li className="item"  key={index}>
+                            <li className="item font-weight-normal text-primary text-sm-left h5"  key={index} data-id={index}>
                                 <a href={item.url} target="_blank">{item.name}</a>
                             </li>
                         )
