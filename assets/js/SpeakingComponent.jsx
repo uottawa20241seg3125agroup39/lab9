@@ -1,30 +1,32 @@
-function EmbassySpeakingComponent() {
+
+function generateEmbassyNewsList(){
+    return new Promise((resolve, reject) => {
+        $.getJSON("assets/config/embassy.json", function (data) {
+            resolve(
+                <ul>
+                    {data.map((item, index) => {
+                        return (
+                            <li className="item"  key={index}>
+                                <a href={item.url} target="_blank">{item.name}</a>
+                            </li>
+                        )
+                    })}
+                </ul>
+            )
+        })
+    })
+}
+
+
+
+async function EmbassySpeakingComponent() {
     return (
         <div className="right" id="sgfyr_list">
-            <ul>
-                <li className="item" data-id="11261098">
-                    <a href="#" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in
-                        Canada（2024-03-14）</a>
-                </li>
-                <li className="item" data-id="11259944">
-                    <a href="#" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in
-                        Canada（2024-03-12）</a>
-                </li>
-                <li className="item" data-id="11256064">
-                    <a href="#" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in
-                        Canada（2024-03-08）</a>
-                </li>
-                <li className="item" data-id="11247703">
-                    <a href="#" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in
-                        Canada（2024-02-20）</a>
-                </li>
-                <li className="item" data-id="11227041">
-                    <a href="#" target="_blank">Remarks of the Spokesperson of the Chinese Embassy in
-                        Canada（2024-01-16）</a>
-                </li>
-            </ul>
+            {await generateEmbassyNewsList()}
         </div>
     );
 }
 
-export default EmbassySpeakingComponent;
+$('document').ready(async function () {
+    ReactDOM.render(await EmbassySpeakingComponent(), $('#Embassy-card-DOM')[0]);
+})
